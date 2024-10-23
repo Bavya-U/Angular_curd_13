@@ -1,0 +1,13 @@
+/* form.component.css */
+.container {
+    margin-top: 20px;
+  }
+  
+  .card-header {
+    background-color: #007bff;
+  }
+  
+  .form-control {
+    border-radius: 5px;
+  }
+  

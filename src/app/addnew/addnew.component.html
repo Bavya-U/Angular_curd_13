@@ -1,0 +1,77 @@
+<div class="container mt-4">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header bg-primary text-white">
+          <h5 class="mb-0">Responsive Form</h5>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="register" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+              <label for="input1" class="form-label">Name</label>
+              <input
+                type="text"
+                id="input1"
+                formControlName="name"
+                autocomplete="off"
+                class="form-control"
+                placeholder="Enter Name"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="input2" class="form-label">Email</label>
+              <input
+                type="text"
+                id="input2"
+                formControlName="email"
+                autocomplete="off"
+                class="form-control"
+                placeholder="Enter Email"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="input3" class="form-label">Phone No</label>
+              <input
+                type="text"
+                id="input3"
+                formControlName="phoneno"
+                autocomplete="off"
+                class="form-control"
+                placeholder="Enter Phone No"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="input4" class="form-label">DOB</label>
+              <input
+                type="date"
+                id="input4"
+                formControlName="dob"
+                autocomplete="off"
+                class="form-control"
+                placeholder="Enter DOB"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="input5" class="form-label">Gender</label>
+              <select id="input5" formControlName="gender" class="form-control">
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-cenetr">
+              <button type="submit" class="btn btn-success w-50">Submit</button>
+            </div>
+            <br />
+            <span class="{{ messageclass }}">{{ message }}</span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
